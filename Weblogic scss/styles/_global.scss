@@ -1,0 +1,48 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+img{
+  width: 95%;
+}
+
+.btn{
+  font-size: 0.75rem;
+  color: white;
+  padding: 0.7em 0.9em;
+  border-radius: 5px;
+  background-color: $primary-color;
+
+  &:hover{
+    background-color: $btn-hover;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  img{
+    width: 44%;
+  }
+}

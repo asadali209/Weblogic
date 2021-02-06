@@ -1,0 +1,298 @@
+@import 'color';
+@import 'global';
+@import 'services';
+@import 'about';
+@import 'contact';
+
+header{
+  background-color: $bg-nav;
+  padding: 1em 0;
+
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a{
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .nav-toggle{
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navbar{
+    position: fixed;
+    width: 65%;
+    height: 100vh;
+    background-color: $bg-nav;
+    top: 0;
+    right: -100%;
+    text-align: right;
+    transition: 0.5s ease;
+    z-index: 999;
+
+    .nav-exit{
+      font-size: 2.5rem;
+      color: white;
+      margin: 0.75em;
+      cursor: pointer;
+    }
+
+    ul{
+      margin-top: 1em;
+      text-align: center;
+
+      li{
+        line-height: 3;
+      }
+
+      a{
+        color: $bg-light;
+      }
+
+      .current{
+        color: $primary-color;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .navbar.menu-btn{
+    right: 0;
+  }
+}
+
+// Hero Section
+.hero{
+  width: 100%;
+  height: auto;
+  padding-bottom: 3em;
+  background-color: $bg-dark;
+
+  .hero-content{
+    padding: 3em 0.6em 1em 0.6em;
+    margin-bottom: 0.5em;
+
+    h1{
+      color: white;
+      font-size: 1.7rem;
+      margin-bottom: 0.6em;
+      line-height: 1.5;
+    }
+
+    p{
+      color: $bg-light;
+      font-size: 0.9rem;
+      margin-bottom: 1.6em;
+      line-height: 1.7;
+    }
+  }
+}
+
+// Main about section
+.main-about{
+  width: 100%;
+  height: auto;
+  padding: 3em 0.6em 5em 0.6em;
+
+  h2{
+    text-align: center;
+    font-size: 1.4rem;
+    color: $bg-nav;
+    margin-bottom: 1em;
+  }
+
+  p{
+    color: $bg-dark;
+    font-size: 0.9rem;
+    margin: 1em 0 1.5em 0;
+    line-height: 2;
+  }
+}
+
+// Footer
+footer{
+  margin-top: auto;
+  width: 100%;
+  background: $bg-dark;
+  padding: 1.5em 0;
+  text-align: center;
+
+  .foot-logo{
+    font-weight: bold;
+    color: $primary-color;
+  }
+  
+  p{
+    color: $bg-light;
+    font-size: 0.8rem;
+    margin: 1em 0;
+  }
+
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      width: 70%;
+    }
+  }
+}
+
+// Media queries
+
+@media only screen and (min-width: 768px){
+  header{
+
+    .logo a{
+      font-size: 1.3rem;
+    }
+
+    .nav-toggle, .nav-exit{
+      display: none;
+    }
+
+    .navbar{
+      position: static;
+      width: auto;
+      height: auto;
+
+      ul{
+        display: flex;
+        margin-top: 0;
+      }
+
+      li{
+        margin: 0 0.45em;
+      }
+
+      a{
+        font-size: 0.9rem;
+        outline: none;
+
+        &:hover, &:focus{
+          border-bottom: 2px solid $primary-color;
+        }
+      }
+    }
+  }
+
+  .hero .container, .main-about .container{
+    width: 70%;
+    padding-top: 3vh;
+  }
+
+  .main-about{
+    padding-top: 2em;
+  }
+
+}
+
+@media only screen and (min-width: 992px){
+
+  .hero{
+    padding-bottom: 12.5em;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      padding-top: 12vh;
+      width: 85%;
+    }
+
+    .hero-content{
+      width: 50%;
+      padding-top: 0;
+
+      h1{
+        font-size: 2rem;
+        line-height: 1.35;
+        margin-bottom: 0.5em;
+      }
+
+      p{
+        font-size: 1rem;
+        margin-bottom: 1.7em;
+      }
+  
+      .btn{
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding: 0.8em 1em;
+      }
+    }
+
+  }
+
+  .main-about{
+    padding: 5em 0.6em 8em 0.6em;
+
+    .container{
+      width: 85%;
+    }
+  
+    h2{
+      font-size: 1.6rem;
+      margin-bottom: 1.5em;
+    }
+
+    .content{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .more-content{
+      width: 45%;
+    }
+  
+    p{
+      font-size: 1rem;
+      margin: 1em 0 1.5em 0;
+      line-height: 2;
+    }
+
+    .btn{
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.7em 1em;
+    }
+  }
+
+  footer{
+    padding: 1.4em 0;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .foot-logo{
+      font-size: 1.1rem;
+    }
+    
+    p{
+      font-size: 0.9rem;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1203px){
+
+  .hero{
+
+    .hero-content h1{
+      font-size: 2.4rem;
+    }
+  }
+
+}
