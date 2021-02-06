@@ -29,6 +29,15 @@ img{
   width: 95%;
 }
 
+.img-cont{
+  text-align: center;
+
+  a{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
 .btn{
   font-size: 0.75rem;
   color: white;
@@ -42,7 +51,12 @@ img{
 }
 
 @media only screen and (min-width: 992px){
-  img{
+  
+  .img-cont{
     width: 44%;
+  }
+
+  img{
+    width: 100%;
   }
 }
