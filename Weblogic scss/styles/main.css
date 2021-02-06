@@ -35,6 +35,15 @@ img {
   width: 95%;
 }
 
+.img-cont {
+  text-align: center;
+}
+
+.img-cont a {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
 .btn {
   font-size: 0.75rem;
   color: white;
@@ -48,8 +57,11 @@ img {
 }
 
 @media only screen and (min-width: 992px) {
-  img {
+  .img-cont {
     width: 44%;
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -69,13 +81,18 @@ img {
 .service-1 h3 {
   color: #E8E8E8;
   font-weight: 600;
-  margin: 1em 0;
+  margin: 2em 0 1em 0;
 }
 
 .service-1 p {
   color: #E8E8E8;
   font-size: 0.9rem;
   line-height: 2;
+}
+
+.service-1 .img-cont a {
+  color: #E8E8E8;
+  opacity: 0.2;
 }
 
 .service-2 {
@@ -113,6 +130,11 @@ img {
   padding: 0 0.6em;
 }
 
+.service-2 .img-cont a {
+  color: #222831;
+  opacity: 0.6;
+}
+
 .service-3 {
   width: 100%;
   height: auto;
@@ -123,13 +145,18 @@ img {
 .service-3 h3 {
   color: #E8E8E8;
   font-weight: 600;
-  margin: 1em 0;
+  margin: 2em 0 1em 0;
 }
 
 .service-3 p {
   color: #E8E8E8;
   font-size: 0.9rem;
   line-height: 2;
+}
+
+.service-3 .img-cont a {
+  color: #E8E8E8;
+  opacity: 0.2;
 }
 
 .service-4 {
@@ -158,6 +185,11 @@ img {
   color: #222831;
   font-size: 0.9rem;
   line-height: 2;
+}
+
+.service-4 .img-cont a {
+  color: #222831;
+  opacity: 0.6;
 }
 
 @media only screen and (min-width: 768px) {
@@ -242,12 +274,19 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .service-2 .img-cont a {
+    margin-left: -5em;
   }
   .service-2 .img-cont img {
     width: 80%;
@@ -312,6 +351,9 @@ img {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .service-2 .img-cont a {
+    margin-left: 1.5em;
+  }
   .service-2 .img-cont img {
     margin-left: 1.5em;
   }
@@ -334,6 +376,12 @@ img {
   color: #E8E8E8;
   font-size: 0.9rem;
   line-height: 2;
+  margin-top: 2em;
+}
+
+.about-1 .img-cont a {
+  color: #E8E8E8;
+  opacity: 0.2;
 }
 
 .about-2 {
@@ -401,6 +449,7 @@ img {
   }
   .about-1 p {
     font-size: 1rem;
+    margin-top: 0;
   }
   .about-2 h2 {
     margin-bottom: 1.5em;
@@ -572,6 +621,11 @@ header .navbar.menu-btn {
   line-height: 1.7;
 }
 
+.hero .img-cont a {
+  color: #E8E8E8;
+  opacity: 0.2;
+}
+
 .main-about {
   width: 100%;
   height: auto;
@@ -588,8 +642,13 @@ header .navbar.menu-btn {
 .main-about p {
   color: #222831;
   font-size: 0.9rem;
-  margin: 1em 0 1.5em 0;
+  margin: 2em 0 1.5em 0;
   line-height: 2;
+}
+
+.main-about .img-cont a {
+  color: #222831;
+  opacity: 0.6;
 }
 
 footer {
