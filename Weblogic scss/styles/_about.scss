@@ -14,6 +14,14 @@
     color: $bg-light;
     font-size: 0.9rem;
     line-height: 2;
+    margin-top: 2em;
+  }
+
+  .img-cont{
+    a{
+      color: $bg-light;
+      opacity: 0.2;
+    }
   }
 }
 
@@ -75,6 +83,7 @@
   
     p{
       font-size: 1rem;
+      margin-top: 0;
     }
   }
 
