@@ -6,7 +6,7 @@
 
 header{
   background-color: $bg-nav;
-  padding: 1em 0;
+  padding: 1.13em 0;
 
   .container{
     display: flex;
@@ -21,9 +21,15 @@ header{
   }
 
   .nav-toggle{
-    font-size: 1.4rem;
-    color: white;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i{
+      font-size: 1.8rem;
+      color: white;
+      cursor: pointer;
+    }
   }
 
   .navbar{
@@ -164,6 +170,7 @@ footer{
 
 @media only screen and (min-width: 768px){
   header{
+    padding: 1em 0;
 
     .logo a{
       font-size: 1.3rem;
