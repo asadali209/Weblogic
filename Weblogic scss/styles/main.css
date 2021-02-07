@@ -526,7 +526,7 @@ img {
 
 header {
   background-color: #1D242D;
-  padding: 1em 0;
+  padding: 1.13em 0;
 }
 
 header .container {
@@ -548,7 +548,19 @@ header .logo a {
 }
 
 header .nav-toggle {
-  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-toggle i {
+  font-size: 1.8rem;
   color: white;
   cursor: pointer;
 }
@@ -687,6 +699,9 @@ footer ul img {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    padding: 1em 0;
+  }
   header .logo a {
     font-size: 1.3rem;
   }
